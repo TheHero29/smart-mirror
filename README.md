@@ -3,6 +3,8 @@
 
 This project is a compliment system for smart mirror that detects emotions using facial recognition and provides a compliment based on the detected emotion. The program utilizes OpenCV for face detection, FER (Facial Emotion Recognition) library for emotion analysis, and pyttsx3 for text-to-speech functionality.
 
+## Demo - [link](https://drive.google.com/file/d/1MKghb-zsfQE65SnnVD_cIGMRXKi-f3hF/view?usp=drive_link)
+
 ## Features
 
 - **Real-Time Face Detection**: Uses OpenCV's Haar Cascade Classifier for detecting faces in real-time.
