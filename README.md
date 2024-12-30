@@ -11,12 +11,14 @@ This project is a compliment system for smart mirror that detects emotions using
 - **Text-to-Speech**: Compliments are spoken out loud using the pyttsx3 text-to-speech engine.
 - **Graceful Shutdown**: The program ensures that all resources are properly released when the user quits.
 
-## Requirements
+## Challenges faced -
+### 1.Too frequent emotion change:
+Problem: emotions were changing too frequently and queue was getting filled unnecessarily
+Solution: compliment will be pushed to queue only if there is a emotion change in last 5 secs
 
-- Python 3.x
-- OpenCV
-- FER (Facial Emotion Recognition) library
-- pyttsx3
+### 2.Audio and Speech Issues:
+Problem: The camera video would pause during text-to-speech
+Solution: Used a separate thread and a queue to handle speech so it doesn’t block the main program.
 
 ## Setup and Usage
 
